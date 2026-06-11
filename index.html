@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <div class="top-bar">
+
+        <button onclick="toggleTheme()">
+            Mode
+        </button>
+
+        <button onclick="toggleScientific()">
+            Scientific/Basic
+        </button>
+
+        <div class="theme-container">
+
+<div class="theme blue"
+onclick="changeTheme('#163A6E')"></div>
+
+<div class="theme green"
+onclick="changeTheme('#275421')"></div>
+
+<div class="theme purple"
+onclick="changeTheme('#98589E')"></div>
+
+<div class="theme red"
+onclick="changeTheme('#691710')"></div>
+
+<div class="theme brown"
+onclick="changeTheme('#916044')"></div>
+
+</div>
+    </div>
+
+    <input
+        type="text"
+        id="res"
+        readonly
+        placeholder="0"
+    >
+
+    <div id="scientific-panel" class="scientific-grid">
+
+        <button onclick="sqrt()">√</button>
+        <button onclick="cbrt()">∛</button>
+        <button onclick="power()">xʸ</button>
+        <button onclick="square()">x²</button>
+
+        <button onclick="cube()">x³</button>
+        <button onclick="log10()">log</button>
+        <button onclick="ln()">ln</button>
+        <button onclick="insertPi()">π</button>
+
+        <button onclick="factorial()">n!</button>
+        <button onclick="Solve('(')">(</button>
+        <button onclick="Solve(')')">)</button>
+        <button onclick="Solve('%')">%</button>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="special" onclick="Clear()">C</button>
+        <button class="special" onclick="Back()">⌫</button>
+        <button onclick="Solve('/')">÷</button>
+        <button onclick="Solve('*')">×</button>
+
+        <button onclick="Solve('7')">7</button>
+        <button onclick="Solve('8')">8</button>
+        <button onclick="Solve('9')">9</button>
+        <button onclick="Solve('-')">−</button>
+
+        <button onclick="Solve('4')">4</button>
+        <button onclick="Solve('5')">5</button>
+        <button onclick="Solve('6')">6</button>
+        <button onclick="Solve('+')">+</button>
+
+        <button onclick="Solve('1')">1</button>
+        <button onclick="Solve('2')">2</button>
+        <button onclick="Solve('3')">3</button>
+        <button class="equal" onclick="Result()">=</button>
+
+        <button onclick="Solve('00')">00</button>
+        <button onclick="Solve('0')">0</button>
+        <button onclick="Solve('.')">.</button>
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
